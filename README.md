@@ -112,6 +112,22 @@ When I join a project, I first reduce uncertainty:
 
 ---
 
+## Public Demo Lab
+
+These public demo cards are being prepared as original, non-confidential proof-of-work. They are designed to show how I think through mobile/frontend engineering problems without exposing private project code or client details.
+
+| Demo | What It Shows | Status |
+| --- | --- | --- |
+| React Native App Stabilization Checklist | How I audit crashes, release blockers, performance issues, dependencies, and first milestones in an inherited app. | Researching |
+| EAS Build and Update Release Workflow | How I approach Android/iOS builds, OTA updates, runtime versions, preview channels, and release safety. | Researching |
+| Crashlytics Debugging Workflow | How I use crash data, reproduction steps, app versions, and user impact to prioritize fixes. | Researching |
+| React Native New Architecture Readiness | How I evaluate dependency compatibility, upgrade risk, Fabric/TurboModule readiness, and test planning. | Planned |
+| ReactJS + TypeScript Component Architecture | How I design reusable, type-safe, maintainable frontend components and UI states. | Planned |
+
+Research roadmap: [PUBLIC_DEMO_ROADMAP.md](PUBLIC_DEMO_ROADMAP.md)
+
+---
+
 ## Contact
 
 I am open to remote full-time, contract, and product engineering opportunities involving React Native, ReactJS, mobile app delivery, frontend architecture, and technical leadership.
