@@ -1,134 +1,120 @@
+<div align="center">
+
 # Pushpendra Mishra
 
-## Lead Software Engineer | React Native, ReactJS, TypeScript, iOS
+### Lead Software Engineer | React Native | ReactJS | TypeScript | iOS
 
-I help product teams build, stabilize, and improve mobile and frontend applications.
+I build reliable mobile and frontend products for teams that care about performance, maintainability, and clean delivery.
 
-My strongest areas are **React Native**, **ReactJS**, **TypeScript**, **JavaScript**, **iOS**, **Firebase**, **Redux**, **GraphQL**, app performance, reusable frontend components, technical design, code review, and production support.
+[Email](mailto:Pushpendra.mishra660@gmail.com) | [LinkedIn](https://www.linkedin.com/in/pushpendra-mishra-53b133b3/)
 
-[Email](mailto:Pushpendra.mishra660@gmail.com) · [LinkedIn](https://www.linkedin.com/in/pushpendra-mishra-53b133b3/)
-
----
-
-## How I Can Help
-
-### React Native App Development
-
-- Build new React Native app features
-- Stabilize existing mobile apps
-- Fix crashes, build issues, and release blockers
-- Improve app performance and responsiveness
-- Integrate Firebase, push notifications, payments, camera/scanner flows, and third-party SDKs
-- Support Android and iOS delivery workflows
-
-### ReactJS / Frontend Engineering
-
-- Build scalable ReactJS and TypeScript interfaces
-- Create reusable component systems
-- Integrate REST and GraphQL APIs
-- Improve frontend architecture and maintainability
-- Debug performance issues in complex UI flows
-- Work with Material UI, React Hooks, React Router, Jest, and modern frontend tooling
-
-### Technical Leadership
-
-- Lead frontend/mobile delivery
-- Review code and improve engineering practices
-- Mentor junior and mid-level developers
-- Turn requirements, wireframes, and product goals into maintainable implementation plans
-- Help teams reduce delivery risk in remote/distributed environments
+</div>
 
 ---
 
-## Best-Fit Projects
+## About
 
-I am a strong fit for:
+I am a Lead Software Engineer focused on **React Native**, **ReactJS**, **TypeScript**, **JavaScript**, and **iOS** development.
 
-- React Native MVPs
-- React Native rescue projects
-- Mobile app performance fixes
-- Firebase-based mobile apps
-- ReactJS dashboards and CRM-style platforms
-- TypeScript frontend architecture
-- iOS app maintenance and migration support
-- App release preparation for Android and iOS
-- Third-party SDK integrations
-- Product engineering roles involving mobile, frontend, architecture, and delivery ownership
+My work sits at the intersection of mobile app delivery, frontend architecture, product engineering, and technical leadership. I have experience building and maintaining mobile/web applications, improving frontend performance, integrating APIs and SDKs, creating reusable component systems, reviewing code, and helping teams move from unclear requirements to stable releases.
 
 ---
 
-## Tech Stack
+## Core Strengths
 
-**Mobile:** React Native, iOS, Swift, Objective-C  
-**Frontend:** ReactJS, TypeScript, JavaScript, HTML, CSS, Material UI  
-**State/API:** Redux, Redux Thunk, GraphQL, Apollo, REST APIs, JSON  
-**Firebase:** Firestore, Dynamic Links, Crashlytics, App Distribution  
-**Tools:** GitHub, Bitbucket, Azure Repo, CI/CD, Jest  
-**App Features:** Push notifications, payments, camera/scanner integration, deep links, media workflows  
-**Architecture:** MVVM, MVC, reusable components, technical design, UML, performance optimization
-
----
-
-## Selected Project Experience
-
-### React Native Mobile App - Gift Discovery / Payments / Scanner
-
-Worked on a React Native mobile app involving:
-
-- Firebase Firestore, Dynamic Links, Crashlytics, and App Distribution
-- Apple Pay / Google Pay and PayPal flows
-- Push notifications
-- Camera scanner integration
-- Responsive mobile UI
-- JavaScript-based React Native development
-- Code review, technical design, and team coordination
-
-### CRM Frontend Platform
-
-Worked on a ReactJS and TypeScript CRM-style platform involving:
-
-- ReactJS, TypeScript, React Hooks, React Router
-- GraphQL
-- Material UI
-- D3.js
-- Jest
-- Reusable frontend components
-- Technical design, code review, and delivery planning
-
-### iOS Social / Media App
-
-Worked on an iOS app involving:
-
-- Swift and Objective-C
-- Firebase Dynamic Links, Crashlytics, and App Distribution
-- Image, video, and text editing flows
-- Camera integration
-- iMessage and Share Extension
-- Push Notification Extensions
-- AWS S3 and Giphy integrations
+| Mobile Engineering | Frontend Engineering | Engineering Leadership |
+| --- | --- | --- |
+| React Native apps | ReactJS + TypeScript interfaces | Technical design |
+| iOS workflows | Reusable component systems | Code review |
+| Firebase integrations | GraphQL / REST integration | Mentoring |
+| Crash and release support | Performance optimization | Delivery planning |
+| Push, payments, camera/scanner | Material UI, hooks, routing | Distributed collaboration |
 
 ---
 
-## How I Approach Client Projects
+## Technology Stack
 
-For existing apps, I start by reducing uncertainty:
+| Area | Tools & Technologies |
+| --- | --- |
+| Mobile | React Native, iOS, Swift, Objective-C |
+| Frontend | ReactJS, TypeScript, JavaScript, HTML, CSS, Material UI |
+| State & APIs | Redux, Redux Thunk, GraphQL, Apollo, REST APIs, JSON |
+| Firebase | Firestore, Dynamic Links, Crashlytics, App Distribution |
+| Testing & Delivery | Jest, CI/CD, GitHub, Bitbucket, Azure Repo |
+| App Features | Push notifications, payments, camera/scanner, deep links, media workflows |
+| Architecture | MVVM, MVC, reusable components, UML, performance optimization |
 
-1. Understand the business goal and user flow.
-2. Review the current codebase, build setup, and release blockers.
+---
+
+## Where I Add Value
+
+### Product Engineering
+
+I can take product requirements, designs, and existing app behavior and turn them into maintainable mobile/frontend features.
+
+### App Stabilization
+
+I help teams diagnose slow screens, crashes, build issues, release blockers, and fragile frontend flows.
+
+### Frontend Architecture
+
+I design React/React Native structures that are easier to extend, test, review, and maintain.
+
+### Team Delivery
+
+I support teams with code reviews, technical planning, implementation guidance, and practical engineering standards.
+
+---
+
+## Selected Experience
+
+### React Native Mobile App
+
+Built and maintained mobile functionality involving Firebase, payments, push notifications, camera scanner integration, responsive UI, Crashlytics, and app distribution workflows.
+
+**Relevant stack:** React Native, JavaScript, Firebase Firestore, Dynamic Links, Crashlytics, App Distribution, Apple Pay, Google Pay, PayPal.
+
+### ReactJS CRM Platform
+
+Worked on a CRM-style frontend platform with TypeScript, GraphQL, reusable components, routing, charts, testing, and Material UI.
+
+**Relevant stack:** ReactJS, TypeScript, GraphQL, React Hooks, React Router, D3.js, Jest, Material UI.
+
+### iOS Media Application
+
+Worked on an iOS app involving media editing, camera features, share extensions, push notification extensions, Firebase, AWS S3, and Giphy integration.
+
+**Relevant stack:** Swift, Objective-C, Firebase Dynamic Links, Crashlytics, App Distribution, AWS S3, iMessage, Share Extension.
+
+---
+
+## My Engineering Approach
+
+When I join a project, I first reduce uncertainty:
+
+1. Clarify the business goal and user flow.
+2. Understand the current codebase, architecture, and release process.
 3. Reproduce bugs or performance issues before changing code.
-4. Prioritize fixes by user impact and delivery risk.
-5. Ship a small first milestone that proves progress.
-6. Document what changed so the team can maintain it confidently.
-
-For new features, I focus on clean implementation, predictable delivery, and long-term maintainability.
+4. Prioritize work by user impact and delivery risk.
+5. Ship focused improvements that create visible progress.
+6. Document important decisions so the team can maintain the product confidently.
 
 ---
 
-## Availability
+## Current Focus
 
-I am open to **remote full-time, contract, and product engineering opportunities** involving React Native, ReactJS, frontend architecture, mobile app delivery, and app stabilization.
+- React Native app reliability and release workflows
+- ReactJS and TypeScript frontend architecture
+- Mobile performance and debugging
+- Firebase, GraphQL, and third-party SDK integrations
+- AI-assisted engineering workflows for faster delivery
+- Clean handoff, maintainable code, and strong team collaboration
 
-If you have a React Native or frontend project that needs senior ownership, you can reach me at:
+---
+
+## Contact
+
+I am open to remote full-time, contract, and product engineering opportunities involving React Native, ReactJS, mobile app delivery, frontend architecture, and technical leadership.
 
 **Email:** [Pushpendra.mishra660@gmail.com](mailto:Pushpendra.mishra660@gmail.com)  
-**LinkedIn:** [pushpendra-mishra-53b133b3](https://www.linkedin.com/in/pushpendra-mishra-53b133b3/)
+**LinkedIn:** [linkedin.com/in/pushpendra-mishra-53b133b3](https://www.linkedin.com/in/pushpendra-mishra-53b133b3/)
