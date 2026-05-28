@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Reusable React Component System | Pushpendra Mishra</title><link rel="stylesheet" href="../styles.css"/></head><body><main class="case-page"><a class="back-link" href="../index.html">Back to portfolio</a><p class="eyebrow">ReactJS Proof Of Work</p><h1>Reusable React Component System</h1><p class="case-lead">A practical component design approach for product teams that need consistency without over-engineering.</p><section class="case-section"><h2>The Problem</h2><p>Frontend teams lose speed when buttons, forms, cards, tables, modals, and state views are rebuilt differently across every feature. The product starts looking inconsistent and the code becomes harder to review.</p></section><section class="case-section"><h2>Component Principles</h2><ul><li>Start with repeated product patterns, not abstract design theory.</li><li>Use TypeScript props to make allowed states explicit.</li><li>Support loading, empty, error, disabled, and success states from the beginning.</li><li>Keep business logic out of shared visual components.</li><li>Document examples so other engineers can adopt the system quickly.</li></ul></section><section class="case-section"><h2>Example Component Contract</h2><pre><code>type AsyncState = "idle" | "loading" | "error" | "empty" | "success";
+
+type DataPanelProps = {
+  title: string;
+  state: AsyncState;
+  errorMessage?: string;
+  children: React.ReactNode;
+};</code></pre></section></main></body></html>
