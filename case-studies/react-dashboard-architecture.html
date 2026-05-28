@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>ReactJS Dashboard Architecture | Pushpendra Mishra</title><link rel="stylesheet" href="../styles.css"/></head><body><main class="case-page"><a class="back-link" href="../index.html">Back to portfolio</a><p class="eyebrow">ReactJS Proof Of Work</p><h1>ReactJS + TypeScript Dashboard Architecture</h1><p class="case-lead">A public architecture example for dashboards, CRM platforms, admin tools, and data-heavy frontend products.</p><section class="case-section"><h2>The Problem</h2><p>Dashboards become hard to maintain when pages own too much logic, API states are inconsistent, components are copied instead of composed, and filters, tables, and forms all grow differently.</p></section><section class="case-section"><h2>Architecture Approach</h2><ul><li>Keep route-level pages focused on orchestration.</li><li>Move reusable UI into typed components with clear props.</li><li>Centralize loading, empty, error, and success state patterns.</li><li>Separate API/data hooks from presentation components.</li><li>Design table, filter, modal, and form patterns that can scale.</li></ul></section><section class="case-section"><h2>Example Structure</h2><pre><code>features/
+  customers/
+    api/
+    components/
+    hooks/
+    pages/
+    types.ts
+shared/
+  ui/
+  layout/
+  state/
+  utils/</code></pre></section></main></body></html>
