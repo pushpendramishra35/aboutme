@@ -107,35 +107,32 @@ When I join a project, I first reduce uncertainty:
 - ReactJS and TypeScript frontend architecture
 - Mobile performance and debugging
 - Firebase, GraphQL, and third-party SDK integrations
-- AI-assisted engineering workflows for faster delivery
 - Clean handoff, maintainable code, and strong team collaboration
 
 ---
 
 ## Public Demo Lab
 
-These public demo cards are being prepared as original, non-confidential proof-of-work. They are designed to show how I think through mobile/frontend engineering problems without exposing private project code or client details.
+These public demo cards are original, non-confidential proof-of-work examples. They are designed to show how I think through mobile/frontend engineering problems without exposing private project code or client details.
 
 ### React Native Track
 
 | Demo | What It Shows | Status |
 | --- | --- | --- |
-| React Native App Stabilization Checklist | How I audit crashes, release blockers, performance issues, dependencies, and first milestones in an inherited app. | Researching |
-| EAS Build and Update Release Workflow | How I approach Android/iOS builds, OTA updates, runtime versions, preview channels, and release safety. | Researching |
-| Crashlytics Debugging Workflow | How I use crash data, reproduction steps, app versions, and user impact to prioritize fixes. | Researching |
+| React Native App Stabilization Checklist | How I audit crashes, release blockers, performance issues, dependencies, and first milestones in an inherited app. | In progress |
+| EAS Build and Update Release Workflow | How I approach Android/iOS builds, OTA updates, runtime versions, preview channels, and release safety. | In progress |
+| Crashlytics Debugging Workflow | How I use crash data, reproduction steps, app versions, and user impact to prioritize fixes. | In progress |
 | React Native New Architecture Readiness | How I evaluate dependency compatibility, upgrade risk, Fabric/TurboModule readiness, and test planning. | Planned |
 
 ### ReactJS Track
 
 | Demo | What It Shows | Status |
 | --- | --- | --- |
-| ReactJS + TypeScript Dashboard Architecture | How I structure dashboard pages, routing, data states, reusable components, and API integration. | Researching |
+| ReactJS + TypeScript Dashboard Architecture | How I structure dashboard pages, routing, data states, reusable components, and API integration. | In progress |
 | Reusable Component System | How I design typed UI components with loading, empty, error, and success states. | Planned |
 | React Performance Review Checklist | How I find unnecessary renders, expensive calculations, list issues, and state-placement problems. | Planned |
 | GraphQL + React Data Flow Notes | How I organize GraphQL queries, UI states, error handling, and component boundaries. | Planned |
 | Frontend Testing Notes | How I approach unit tests and UI confidence with Jest and component-level test strategy. | Planned |
-
-Research roadmap: [PUBLIC_DEMO_ROADMAP.md](PUBLIC_DEMO_ROADMAP.md)
 
 ---
 
