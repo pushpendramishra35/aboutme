@@ -10,16 +10,21 @@ Goal: publish public, original proof-of-work demos that help Pushpendra Mishra w
 - Expo official docs: EAS Update
 - Expo official docs: React Native New Architecture
 - Firebase official docs: Crashlytics
+- React official docs: performance, hooks, state, and rendering
+- TypeScript official docs
+- Apollo GraphQL docs
+- Jest docs
 
 ## 1-2 Week Publishing Plan
 
 ### Week 1: Build Public Proof Cards
 
-Create 3 public demo write-ups in the `aboutme` repo:
+Create 4 public demo write-ups in the `aboutme` repo, split between React Native and ReactJS:
 
 1. React Native App Stabilization Checklist
 2. EAS Build and Update Release Workflow
-3. Crashlytics Debugging Workflow for Mobile Apps
+3. ReactJS + TypeScript Dashboard Architecture
+4. Reusable React Component System
 
 Each card should include:
 
@@ -35,7 +40,7 @@ Each card should include:
 Create 2 deeper public assets:
 
 1. React Native New Architecture Readiness Notes
-2. ReactJS + TypeScript Component Architecture Demo
+2. React Performance Review Checklist
 
 Each asset should include:
 
@@ -46,6 +51,8 @@ Each asset should include:
 - Interview/client discussion points
 
 ## Public Demo Topics
+
+## React Native Track
 
 ### React Native App Stabilization Checklist
 
@@ -105,7 +112,26 @@ Public content can cover:
 - Expo Doctor and React Native Directory checks
 - Test strategy before switching architecture settings
 
-### ReactJS + TypeScript Component Architecture
+## ReactJS Track
+
+### ReactJS + TypeScript Dashboard Architecture
+
+Purpose: show frontend product engineering strength for dashboards, CRM platforms, SaaS tools, and admin portals.
+
+Public content can cover:
+
+- Page/module structure
+- Routing boundaries
+- API/data layer separation
+- Loading, empty, error, and success states
+- Reusable table/filter/form patterns
+- Type-safe props and API response handling
+- GraphQL or REST integration
+- Testable component boundaries
+
+Use a generic dashboard example, not private CRM details.
+
+### Reusable React Component System
 
 Purpose: show frontend architecture strength.
 
@@ -117,6 +143,47 @@ Public content can cover:
 - API/data separation
 - Error/loading/empty states
 - Testing approach
+
+### React Performance Review Checklist
+
+Purpose: show ability to debug and improve complex React interfaces.
+
+Public content can cover:
+
+- Unnecessary re-renders
+- Expensive calculations in render
+- Memoization decisions
+- State placement
+- Large list rendering
+- Data-fetching and caching impact
+- Component splitting
+- Measurement-first optimization
+
+### GraphQL + React Data Flow Notes
+
+Purpose: show API integration and data-state handling experience.
+
+Public content can cover:
+
+- Query boundaries
+- Loading/error/empty states
+- Normalized vs local UI state
+- Pagination and filtering
+- Avoiding over-fetching where possible
+- Keeping presentation components clean
+
+### Frontend Testing Notes
+
+Purpose: show maintainability and delivery confidence.
+
+Public content can cover:
+
+- What to test at component level
+- What not to over-test
+- Jest usage
+- Mocking API states
+- Testing loading, error, and empty UI
+- Regression confidence for reusable components
 
 ## Safety Rules
 
