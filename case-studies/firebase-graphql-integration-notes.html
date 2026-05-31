@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firebase & GraphQL Integration Notes | Pushpendra Mishra</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="case-page">
+      <a class="back-link" href="../index.html">Back to portfolio</a>
+      <p class="eyebrow">Integration Notes</p>
+      <h1>Firebase & GraphQL Integration Notes</h1>
+      <p class="case-lead">
+        Public implementation notes for frontend and mobile teams that combine realtime product behavior with
+        typed API flows.
+      </p>
+
+      <section class="case-section">
+        <h2>The Problem</h2>
+        <p>
+          Teams often mix Firebase and GraphQL for good reasons, but the boundary becomes messy quickly. It is
+          easy to duplicate ownership between Firestore, Apollo cache, local state, and UI state unless the
+          data model is intentionally divided.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <h2>How I Separate Responsibilities</h2>
+        <ul>
+          <li>Use GraphQL for typed business entities, server validation, and list/detail workflows.</li>
+          <li>Use Firebase for authentication, crash reporting, push delivery, realtime signals, or lightweight sync.</li>
+          <li>Define one source of truth per domain object instead of mirroring the same record everywhere.</li>
+          <li>Keep optimistic UI and retry behavior explicit so offline or partial-failure states are understandable.</li>
+          <li>Log integration failure points around auth refresh, network edges, and background app state.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>UI State Rules</h2>
+        <ul>
+          <li>Keep loading, empty, permission, and error states visually consistent across screens.</li>
+          <li>Do not let data hooks own navigation side effects unless the flow is intentionally coupled.</li>
+          <li>Promote derived view models so components render stable props instead of raw backend shapes.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Why This Matters</h2>
+        <p>
+          Clear integration boundaries reduce production bugs, make debugging faster, and let mobile and
+          frontend teams extend the product without fighting hidden data coupling.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
