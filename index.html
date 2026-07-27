@@ -399,10 +399,10 @@
             <h3>Firebase & GraphQL Integration Notes</h3>
             <p>Practical notes for combining client state, remote data, realtime updates, and failure handling.</p>
           </a>
-          <a class="case-card" href="case-studies/engineering-research-notes.html">
-            <span>Research</span>
-            <h3>Practical Engineering Research Notes</h3>
-            <p>Short public writeups on release quality, debugging, performance, and careful AI-assisted delivery.</p>
+          <a class="case-card" href="#build-log">
+            <span>Build Log</span>
+            <h3>Build Log &mdash; updated regularly &rarr;</h3>
+            <p>A running feed of real problems solved: fixes, snippets, and short technical notes, added on an ongoing basis.</p>
           </a>
         </div>
       </section>
@@ -428,6 +428,41 @@
             <h3>More on GitHub &rarr;</h3>
             <p>Additional projects, experiments, and public engineering work.</p>
           </a>
+        </div>
+      </section>
+
+      <section class="section" id="build-log">
+        <div class="section-heading">
+          <p class="eyebrow">Build Log</p>
+          <h2>Real problems, solved in public.</h2>
+          <p>
+            Short, dated notes on things I actually fixed and shipped &mdash; added regularly. Proof of how I
+            think and work, not just what I claim.
+          </p>
+        </div>
+        <div class="log-feed">
+          <!-- LOG:START (new entries are inserted directly below this line, newest first) -->
+          <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-27">27 Jul 2026</time><span class="log-tag">Reliability</span></div>
+            <h3>Cutting a React Native crash rate from 2.90% to 1.67%</h3>
+            <p>
+              Most of the crashes traced back to a handful of null-safety gaps and a native-module cleanup that
+              had drifted after upgrades. I triaged the top Crashlytics clusters by impacted-user count (not raw
+              volume), fixed the highest-leverage ones first, and added guards where undefined data crossed the
+              JS&ndash;native bridge &mdash; taking the production crash rate from 2.90% to 1.67%.
+            </p>
+          </article>
+          <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-26">26 Jul 2026</time><span class="log-tag">React Native</span></div>
+            <h3>Migrating custom native modules to TurboModules (New Architecture)</h3>
+            <p>
+              Upgrading React Native across 15 minor versions (0.62 &rarr; 0.77.2) meant moving custom native
+              modules to TurboModules on iOS and Android. The trick was doing it incrementally &mdash; keeping the
+              old bridge working while migrating one module at a time behind the interop layer, so releases never
+              had to stop while the architecture changed underneath.
+            </p>
+          </article>
+          <!-- LOG:END -->
         </div>
       </section>
 
