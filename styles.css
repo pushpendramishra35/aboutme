@@ -875,6 +875,12 @@ button:focus-visible,
   }
 }
 
+/* ---- Profile photo: frame the face, subtle backdrop for transparent/white shots ---- */
+.profile-photo {
+  object-position: 50% 22%;
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+
 /* ---- Hero headline: calmer scale so it doesn't dominate the viewport ---- */
 .hero-copy h1 {
   font-size: clamp(32px, 3.7vw, 50px);
