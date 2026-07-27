@@ -443,6 +443,11 @@
         <div class="log-feed">
           <!-- LOG:START (new entries are inserted directly below this line, newest first) -->
           <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-27">27 Jul 2026</time><span class="log-tag">Performance</span></div>
+            <h3>Shrinking a React Native bundle 15% without cutting features</h3>
+            <p>The 89MB build was mostly leftover native artifacts and unoptimized images bundled after several upgrades. Removing stale architecture outputs, enabling Hermes and Proguard/R8 shrinking, and compressing image assets took it to 76MB — a 15% drop with no feature removed and faster cold starts as a bonus.</p>
+          </article>
+          <article class="log-entry">
             <div class="log-meta"><time datetime="2026-07-27">27 Jul 2026</time><span class="log-tag">Reliability</span></div>
             <h3>Cutting a React Native crash rate from 2.90% to 1.67%</h3>
             <p>
