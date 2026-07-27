@@ -3,8 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Resume of Pushpendra Mishra — Lead React Native & Frontend Engineer, 11+ years across React Native, React, Next.js, TypeScript, and native iOS/Android."
+    />
     <title>Resume | Pushpendra Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Match the theme chosen on the homepage (shared via localStorage) or the system preference.
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Ctext x='50' y='63' font-family='Arial,sans-serif' font-size='44' font-weight='700' fill='white' text-anchor='middle'%3EPM%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
     <main class="case-page">
@@ -12,8 +33,9 @@
       <p class="eyebrow">Resume</p>
       <h1>Pushpendra Mishra</h1>
       <p class="case-lead">
-        Lead Software Engineer focused on React Native, ReactJS, TypeScript, mobile delivery, frontend
-        architecture, and release-aware product engineering.
+        Lead React Native &amp; Frontend Engineer with 11+ years building production mobile and web apps across
+        core banking, health insurance, cloud security, hospitality, and consumer products &mdash; React Native,
+        React, Next.js, TypeScript, and native iOS/Android.
       </p>
 
       <section class="resume-sheet">
@@ -23,25 +45,30 @@
             <p>Email: <a href="mailto:pushpendramishra35@gmail.com">pushpendramishra35@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/pushpendra-mishra-53b133b3/">pushpendra-mishra-53b133b3</a></p>
             <p>GitHub: <a href="https://github.com/pushpendramishra35">pushpendramishra35</a></p>
+            <p>Indore, India &middot; remote (IST with EU / US overlap)</p>
           </article>
           <article>
             <h2>Focus</h2>
-            <p>Lead Software Engineer</p>
-            <p>Senior React Native Engineer</p>
-            <p>Senior Frontend Engineer</p>
+            <p>Lead React Native Engineer</p>
+            <p>Senior Frontend Engineer (React / Next.js)</p>
+            <p>Mobile Technical Lead</p>
           </article>
           <article>
-            <h2>Strengths</h2>
-            <p>React Native, ReactJS, TypeScript, Firebase, GraphQL, iOS, performance, mentoring</p>
+            <h2>Impact</h2>
+            <p>&minus;42% crash rate &middot; &minus;15% app bundle</p>
+            <p>React Native 0.62 &rarr; 0.77.2 (New Architecture)</p>
+            <p>Led a 5-engineer delivery team &middot; +30% productivity</p>
           </article>
         </div>
 
         <section class="resume-section">
           <h2>Summary</h2>
           <p>
-            Experienced frontend and mobile engineer with work spanning iOS, React Native, and ReactJS since
-            2015. Strongest in product engineering, application stabilization, reusable UI systems, release
-            quality, performance optimization, and technical ownership across mobile and web workflows.
+            Lead mobile and frontend engineer with 11+ years shipping production apps from specification through
+            App Store and Google Play release. Deep across React Native (bare workflow, New Architecture /
+            TurboModules), React, Next.js and TypeScript, backed by native iOS (Swift, Objective-C) and Android.
+            Strongest in app modernization, banking-grade mobile security, crash and performance reduction,
+            reusable UI systems, and leading delivery teams through ambiguity.
           </p>
         </section>
 
@@ -49,14 +76,29 @@
           <h2>Professional Experience</h2>
           <ul>
             <li>
-              <strong>Lead Software Engineer, Northout Solutions (ECI)</strong> — December 2016 to present,
-              Indore, India. React, React Native, TypeScript, performance work, mentoring, reusable
-              components, and frontend delivery leadership.
+              <strong>Senior Software Engineer &mdash; Hospitality &amp; Travel (Remote)</strong>, 2023&ndash;present.
+              Led the production React Native modernization from 0.62 to 0.77.2 across 15 minor versions and the
+              New Architecture / TurboModules migration; cut crash rate 42% (2.90% &rarr; 1.67%) and bundle size
+              15% (89&nbsp;MB &rarr; 76&nbsp;MB); own App Store / Google Play release engineering and set
+              code-review and pre-release standards across a six-engineer team.
             </li>
             <li>
-              <strong>Software Engineer, Syscraft Information System Private Limited</strong> — May 2015 to
-              December 2016, Indore, India. Delivered 10+ complex iOS apps with technical design,
-              implementation, and support responsibilities.
+              <strong>Lead Software Engineer &mdash; Core Banking &amp; Fintech (Remote)</strong>, 2022&ndash;2023.
+              Led a team of five engineers on a regulated retail and corporate banking platform; architected a
+              monorepo and shared component foundation for React Native and React; implemented biometric/MFA auth,
+              certificate pinning, jailbreak detection, anti-tampering and encryption at rest, and took the app
+              through penetration testing before release.
+            </li>
+            <li>
+              <strong>Lead Software Engineer &mdash; Enterprise React &amp; Mobile</strong>, 2016&ndash;2022.
+              Built responsive production React and React Native interfaces across multiple product lines;
+              designed a reusable component library and frontend standards adopted by later teams; applied Redux
+              and object-oriented patterns to keep large applications predictable as they scaled.
+            </li>
+            <li>
+              <strong>Software Engineer</strong>, 2014&ndash;2016. Delivered customer-facing UIs and an internal
+              workflow application that increased team productivity by 30%, with performance-critical
+              optimization and production defect resolution.
             </li>
           </ul>
         </section>
@@ -64,21 +106,31 @@
         <section class="resume-section">
           <h2>Selected Delivery Areas</h2>
           <ul>
-            <li>React Native product features, release support, app stabilization, and production debugging.</li>
-            <li>ReactJS dashboards with TypeScript, GraphQL, reusable components, routing, and API state flows.</li>
-            <li>Firebase integrations including Firestore, Dynamic Links, Crashlytics, and App Distribution.</li>
-            <li>Payments, push notifications, camera/scanner workflows, and mobile UX reliability improvements.</li>
-            <li>Code review, mentoring, requirement shaping, risk identification, and milestone planning.</li>
+            <li>React Native modernization, New Architecture / TurboModules, native module bridging (iOS &amp; Android).</li>
+            <li>Banking-grade mobile security: certificate pinning, biometrics/MFA, jailbreak detection, anti-tampering, encryption at rest, Auth0 (OAuth 2.0 / OIDC).</li>
+            <li>React &amp; Next.js dashboards with TypeScript, GraphQL/REST, reusable components, routing, and API state flows.</li>
+            <li>HIPAA-compliant health-insurance, e-commerce, fantasy sports, live streaming and WebRTC video-calling apps.</li>
+            <li>Release engineering with Fastlane, Jenkins, Bitrise, GitHub Actions; crash and performance reduction via Crashlytics.</li>
+            <li>Team leadership: architecture, code review, mentoring, requirement shaping, and milestone planning.</li>
           </ul>
         </section>
 
         <section class="resume-section">
-          <h2>Selected Public Proof</h2>
+          <h2>Skills</h2>
+          <p>
+            React Native, React, Next.js, TypeScript, JavaScript (ES6+), Swift, Objective-C, Kotlin, Java, BLE,
+            Redux, GraphQL, Apollo, REST, Node.js, Firebase, AWS, Material UI, Jest, Monorepos, MVVM, Fastlane,
+            Jenkins, Bitrise, GitHub Actions, Docker, LLM APIs.
+          </p>
+        </section>
+
+        <section class="resume-section">
+          <h2>Open Source &amp; Public Proof</h2>
           <ul>
+            <li><a href="https://github.com/pushpendramishra35/ts-api-client" target="_blank" rel="noopener">ts-api-client</a> &mdash; typed, zero-dependency TypeScript HTTP client.</li>
+            <li><a href="https://github.com/pushpendramishra35/pushpendra-ui" target="_blank" rel="noopener">pushpendra-ui</a> &mdash; headless, accessible React component library.</li>
             <li><a href="case-studies/react-native-stabilization.html">React Native stabilization checklist</a></li>
-            <li><a href="case-studies/eas-release-workflow.html">EAS build and update workflow</a></li>
             <li><a href="case-studies/react-dashboard-architecture.html">TypeScript dashboard architecture</a></li>
-            <li><a href="case-studies/reusable-component-system.html">Reusable component system</a></li>
           </ul>
         </section>
 
@@ -86,7 +138,7 @@
           <h2>Education</h2>
           <p>
             Bachelor of Engineering in Computer Science and Engineering, Rajiv Gandhi Proudyogiki
-            Vishwavidyalaya, Bhopal, India.
+            Vishwavidyalaya (RGPV), Bhopal, India.
           </p>
         </section>
       </section>
