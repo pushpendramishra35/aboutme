@@ -374,6 +374,11 @@
           </p>
         </div>
         <div class="case-grid">
+          <a class="case-card" href="demos/dashboard.html">
+            <span>Live demo</span>
+            <h3>Interactive dashboard &rarr;</h3>
+            <p>A working dashboard showing real data states: loading, empty, error, and populated with search and sorting.</p>
+          </a>
           <a class="case-card" href="case-studies/react-native-stabilization.html">
             <span>React Native</span>
             <h3>App Stabilization Checklist</h3>
@@ -443,6 +448,11 @@
         <div class="log-feed">
           <!-- LOG:START (new entries are inserted directly below this line, newest first) -->
           <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-27">27 Jul 2026</time><span class="log-tag">Live demo</span></div>
+            <h3>Shipped a live, clickable dashboard demo</h3>
+            <p>Built a self-contained analytics dashboard that shows how I handle real UI states &mdash; loading skeletons, empty, error, and populated data with search and sorting &mdash; theme-aware to match this site. <a href="demos/dashboard.html">Open the live demo &rarr;</a></p>
+          </article>
+          <article class="log-entry">
             <div class="log-meta"><time datetime="2026-07-27">27 Jul 2026</time><span class="log-tag">Performance</span></div>
             <h3>Shrinking a React Native bundle 15% without cutting features</h3>
             <p>The 89MB build was mostly leftover native artifacts and unoptimized images bundled after several upgrades. Removing stale architecture outputs, enabling Hermes and Proguard/R8 shrinking, and compressing image assets took it to 76MB — a 15% drop with no feature removed and faster cold starts as a bonus.</p>
@@ -467,7 +477,32 @@
               had to stop while the architecture changed underneath.
             </p>
           </article>
-          <!-- LOG:END -->
+                    <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-25">25 Jul 2026</time><span class="log-tag">Security</span></div>
+            <h3>Taking a banking app through penetration testing with zero criticals left</h3>
+            <p>Hardened a regulated banking app with certificate pinning, biometrics/MFA, root/jailbreak detection, anti-tampering, and encryption at rest, then worked with the pen-test team to remediate every finding before store submission &mdash; shipping with no open critical or high issues.</p>
+          </article>
+          <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-24">24 Jul 2026</time><span class="log-tag">Compliance</span></div>
+            <h3>HIPAA-compliant auth shared cleanly across web and mobile</h3>
+            <p>Standardised authentication on Auth0 (OAuth 2.0 / OIDC) so a health-insurance product behaved identically on React web and React Native mobile &mdash; one session model, consistent token refresh, and audit-friendly logging that held up to HIPAA review.</p>
+          </article>
+          <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-23">23 Jul 2026</time><span class="log-tag">Architecture</span></div>
+            <h3>A reusable component library that cut duplicate UI code ~35%</h3>
+            <p>Built a typed component library where every component ships loading, empty, error, and success states by default. Later product teams adopted it, removing roughly a third of the repeated UI implementation work across projects and making new screens far faster to assemble.</p>
+          </article>
+          <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-22">22 Jul 2026</time><span class="log-tag">React Native</span></div>
+            <h3>Getting BLE reconnect above 99% on a connected-hardware app</h3>
+            <p>A Bluetooth device kept dropping its link when the app backgrounded. Moving re-subscription onto the connection-state callback (instead of component mount) and adding a bounded retry took reconnect success from flaky to consistently above 99% in the field.</p>
+          </article>
+          <article class="log-entry">
+            <div class="log-meta"><time datetime="2026-07-21">21 Jul 2026</time><span class="log-tag">CI/CD</span></div>
+            <h3>Automating releases cut turnaround from ~2 days to ~2 hours</h3>
+            <p>Replaced a manual, error-prone release with Fastlane &mdash; automated code signing, staged rollouts, and release-health checks on iOS and Android. What used to take a couple of days of careful hand-holding now runs in about two hours, with fewer mistakes.</p>
+          </article>
+<!-- LOG:END -->
         </div>
       </section>
 
