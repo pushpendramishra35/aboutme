@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://pushpendramishra35.github.io/aboutme/</loc><priority>1.0</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/resume.html</loc><priority>0.8</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/case-studies/react-native-stabilization.html</loc><priority>0.7</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/case-studies/eas-release-workflow.html</loc><priority>0.6</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/case-studies/react-dashboard-architecture.html</loc><priority>0.6</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/case-studies/reusable-component-system.html</loc><priority>0.6</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/case-studies/firebase-graphql-integration-notes.html</loc><priority>0.5</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/demos/dashboard.html</loc><priority>0.5</priority></url>
+  <url><loc>https://pushpendramishra35.github.io/aboutme/demos/components.html</loc><priority>0.5</priority></url>
+</urlset>
