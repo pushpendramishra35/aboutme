@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Engineering notes by Pushpendra Mishra — short, reusable lessons from production React Native work: crash triage, TurboModules migration, BLE reliability, bundle size, mobile security and release automation." />
+    <title>Engineering Notes | Pushpendra Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      (function () { try { var s = localStorage.getItem("theme"); document.documentElement.setAttribute("data-theme", s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")); } catch (e) {} })();
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Ctext x='50' y='63' font-family='Arial,sans-serif' font-size='44' font-weight='700' fill='white' text-anchor='middle'%3EPM%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main class="case-page">
+      <a class="back-link" href="../index.html">&larr; Back to portfolio</a>
+      <p class="eyebrow">Engineering notes</p>
+      <h1>Short lessons from production work</h1>
+      <p class="case-lead">
+        Reusable notes from real React Native and mobile work &mdash; the decision or failure mode behind each
+        one, not just what was shipped.
+      </p>
+
+      <div class="notes-feed">
+        <article class="note" id="crash-triage">
+          <span class="note-tag">Reliability</span>
+          <h3>Triage crashes by impacted users, not raw volume</h3>
+          <p>A high-count crash can affect a handful of retry-looping sessions, while a lower-count one takes out a whole cohort. Ranking Crashlytics clusters by impacted-user count changed which bugs I fixed first and moved the crash rate faster. The other half was guarding the JS&ndash;native bridge where undefined data crossed it, instead of patching each screen.</p>
+        </article>
+        <article class="note" id="turbomodules">
+          <span class="note-tag">React Native · New Architecture</span>
+          <h3>Migrate native modules to TurboModules incrementally</h3>
+          <p>The interop layer lets the old bridge and TurboModules coexist. That turns a terrifying all-at-once cutover into one module at a time, so the app stays releasable at every step. On a live product, staying releasable is worth more than migrating fast.</p>
+        </article>
+        <article class="note" id="ble">
+          <span class="note-tag">Connected hardware</span>
+          <h3>Re-subscribe BLE on the connection-state callback, not on mount</h3>
+          <p>A device kept dropping its link when the app backgrounded because re-subscription was tied to component mount. Moving it onto the connection-state callback and adding a bounded retry took field reconnect success from flaky to consistently above 99%. The lesson: bind hardware lifecycle to the hardware&rsquo;s state, not the UI&rsquo;s.</p>
+        </article>
+        <article class="note" id="bundle">
+          <span class="note-tag">Performance</span>
+          <h3>Most bundle bloat is leftovers, not features</h3>
+          <p>An 89&nbsp;MB build was mostly stale native artifacts and unoptimized images accumulated across upgrades. Cleaning build outputs, enabling Hermes and Proguard/R8 shrinking, and compressing assets took it to 76&nbsp;MB with faster cold starts and no feature removed.</p>
+        </article>
+        <article class="note" id="security">
+          <span class="note-tag">Security</span>
+          <h3>Security is a layered property, not a feature</h3>
+          <p>Passing a bank&rsquo;s penetration test meant no single control could be load-bearing on its own: identity, transport, application and device each needed their own defense. Working through findings, I fixed root causes rather than symptoms so a re-test wouldn&rsquo;t reopen them.</p>
+        </article>
+        <article class="note" id="releases">
+          <span class="note-tag">CI/CD</span>
+          <h3>Automating releases removes the scary part: the human steps</h3>
+          <p>A manual release took ~2 days of careful hand-holding and was where mistakes happened. Moving code signing, staged rollouts and release-health checks into Fastlane took it to ~2 hours and made releases boring &mdash; which is the goal.</p>
+        </article>
+      </div>
+
+      <section class="case-section">
+        <h2>Live demos</h2>
+        <p>Self-contained frontend demos with real UI states: an <a href="../demos/dashboard.html">interactive dashboard</a> (loading, empty, error, populated, with search and sorting) and a <a href="../demos/components.html">component playground</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>
