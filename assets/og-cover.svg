@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Inter, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#faf7f2"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#0f766e"/>
+  <g transform="translate(80,96)">
+    <rect x="0" y="0" width="64" height="64" rx="14" fill="#14202e"/>
+    <text x="32" y="43" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="24" font-weight="600" fill="#ffffff">PM</text>
+    <text x="84" y="42" font-size="26" font-weight="600" fill="#14202e">Pushpendra Mishra</text>
+  </g>
+  <text x="80" y="300" font-size="76" font-weight="800" letter-spacing="-2" fill="#14202e">Senior / Lead</text>
+  <text x="80" y="384" font-size="76" font-weight="800" letter-spacing="-2" fill="#0f766e">React Native Engineer</text>
+  <text x="80" y="452" font-size="30" fill="#626c7a">I build and modernize production mobile systems.</text>
+  <g font-family="'IBM Plex Mono', monospace" font-size="21" fill="#626c7a">
+    <text x="80" y="536">11+ yrs</text>
+    <text x="230" y="536">·  New Architecture</text>
+    <text x="470" y="536">·  native iOS / Android</text>
+    <text x="760" y="536">·  security &amp; releases</text>
+  </g>
+  <text x="80" y="586" font-family="'IBM Plex Mono', monospace" font-size="18" fill="#9aa2ad">pushpendramishra35.github.io/aboutme</text>
+</svg>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="How Pushpendra Mishra hardened a regulated banking React Native app across identity, transport, application and device layers and took it through third-party penetration testing with no open critical or high issues." />
+    <title>Mobile Security: Banking App Hardening | Pushpendra Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      (function () { try { var s = localStorage.getItem("theme"); document.documentElement.setAttribute("data-theme", s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")); } catch (e) {} })();
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Ctext x='50' y='63' font-family='Arial,sans-serif' font-size='44' font-weight='700' fill='white' text-anchor='middle'%3EPM%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main class="case-page">
+      <a class="back-link" href="../index.html">&larr; Back to portfolio</a>
+      <p class="eyebrow">Case study / 03 · Mobile security</p>
+      <h1>Taking a regulated banking app through penetration testing</h1>
+      <p class="case-lead">
+        Hardening a retail and corporate banking app across four layers — identity, transport, application and
+        device — and remediating every third-party pen-test finding before store release.
+      </p>
+
+      <div class="layers" role="img" aria-label="Four security layers with their controls">
+        <div class="layer"><span class="layer-name">Identity</span><span class="layer-detail">Auth0 · OAuth 2.0 / OIDC · biometrics · MFA</span></div>
+        <div class="layer"><span class="layer-name">Transport</span><span class="layer-detail">Certificate pinning</span></div>
+        <div class="layer"><span class="layer-name">Application</span><span class="layer-detail">Anti-tampering · integrity checks</span></div>
+        <div class="layer"><span class="layer-name">Device</span><span class="layer-detail">Root / jailbreak detection · encryption at rest</span></div>
+      </div>
+
+      <section class="case-section">
+        <h2>Context</h2>
+        <p>A banking product covering retail and corporate customers had to ship to the App Store and Google Play under real regulatory scrutiny. Before release it needed to pass third-party penetration testing, which meant security had to be designed in rather than bolted on.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Problem</h2>
+        <p>Mobile banking has a wide attack surface: stolen credentials, intercepted traffic, tampered binaries, and compromised (rooted or jailbroken) devices. Each needs a different control, and a gap in any one layer can fail the audit.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Approach — hardening by layer</h2>
+        <ul>
+          <li><strong>Identity.</strong> Auth0 with OAuth 2.0 / OIDC, biometric login and MFA, with a consistent session and token-refresh model.</li>
+          <li><strong>Transport.</strong> Certificate pinning so the app only trusts the expected server identity, blocking interception.</li>
+          <li><strong>Application.</strong> Anti-tampering and integrity checks so a modified build refuses to run against production.</li>
+          <li><strong>Device.</strong> Root and jailbreak detection, with encryption at rest for sensitive local data.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Penetration testing</h2>
+        <p>Once the layers were in place, I worked directly with the penetration-testing team: reproduced each finding, fixed the root cause rather than the symptom, and re-tested. Anything that could weaken the audit trail or the security posture was closed before submission.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Result</h2>
+        <ul>
+          <li>Every penetration-test finding remediated before store submission.</li>
+          <li>Shipped with no open critical or high-severity issues.</li>
+          <li>Security controls spanned all four layers, not just authentication.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>What I took from it</h2>
+        <p>Security in a regulated app is a layered property, not a feature. The useful mindset is to assume each layer will be probed and to make sure no single control is load-bearing on its own.</p>
+      </section>
+    </main>
+  </body>
+</html>

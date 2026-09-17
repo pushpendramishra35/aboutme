@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="How Pushpendra Mishra modernized a production React Native app from 0.62 to 0.77.2 across 15 versions and the New Architecture, migrating custom native modules to TurboModules without stopping releases." />
+    <title>React Native Modernization: 0.62 → 0.77.2 | Pushpendra Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      (function () { try { var s = localStorage.getItem("theme"); document.documentElement.setAttribute("data-theme", s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")); } catch (e) {} })();
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Ctext x='50' y='63' font-family='Arial,sans-serif' font-size='44' font-weight='700' fill='white' text-anchor='middle'%3EPM%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main class="case-page">
+      <a class="back-link" href="../index.html">&larr; Back to portfolio</a>
+      <p class="eyebrow">Case study / 01 · React Native modernization</p>
+      <h1>Modernizing a production app across 15 React Native versions</h1>
+      <p class="case-lead">
+        Taking a revenue-critical hospitality app from React Native 0.62 to 0.77.2 and the New Architecture,
+        migrating custom native modules to TurboModules without ever stopping the release train.
+      </p>
+
+      <div class="diagram diagram-inline" role="img" aria-label="Upgrade path from 0.62 through dependencies, native compatibility, build systems, New Architecture and TurboModules to 0.77.2">
+        <span class="chip strong">0.62</span>
+        <span class="chip">dependency migration</span>
+        <span class="chip">native compatibility</span>
+        <span class="chip">build systems</span>
+        <span class="chip">New Architecture</span>
+        <span class="chip">TurboModules</span>
+        <span class="chip strong">0.77.2</span>
+      </div>
+
+      <section class="case-section">
+        <h2>Context</h2>
+        <p>A production hospitality app was several years behind on React Native. It shipped real revenue, had a live user base on both stores, and carried custom native modules written against the old bridge. Standing still was becoming its own risk: dependencies were falling out of support, and the New Architecture was clearly where the ecosystem was heading.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Problem</h2>
+        <p>The gap from 0.62 to current was 15 minor versions. Each carried breaking changes in dependencies, Gradle/CocoaPods, and native APIs. The custom native modules were the hardest part — they had to keep working on every intermediate version while the bridge itself was being replaced by TurboModules.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Constraints</h2>
+        <ul>
+          <li>Releases could not stop. The app had to keep shipping features throughout.</li>
+          <li>No full rewrite — the risk and cost were not justifiable.</li>
+          <li>Both platforms (iOS and Android) had to stay releasable at every step.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Technical decision</h2>
+        <p>Upgrade incrementally rather than jump. Move version by version, resolving dependency and native breakage at each step, and adopt the New Architecture's interop layer so the old bridge and TurboModules could coexist. That let me migrate custom native modules one at a time instead of in a single high-risk cutover.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Implementation</h2>
+        <ul>
+          <li>Stepped through minor versions, fixing dependency and build-system breakage before touching product code.</li>
+          <li>Enabled the New Architecture with the interop layer so legacy bridge modules kept working.</li>
+          <li>Migrated custom native modules to TurboModules on iOS (Swift/Objective-C) and Android (Kotlin) one module at a time, behind the interop boundary.</li>
+          <li>Enabled Hermes and cleaned stale native build artifacts, which also reduced bundle size.</li>
+          <li>Kept the app releasable at each step, so feature work never had to pause.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Trade-offs</h2>
+        <p>Incremental is slower in calendar time than a big-bang upgrade and requires discipline to avoid leaving modules half-migrated. In exchange, risk stays bounded at every step and the app is never un-shippable — which is the right trade for a revenue-critical production app.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Result</h2>
+        <ul>
+          <li>Reached React Native 0.77.2 on the New Architecture, with TurboModules live on both platforms.</li>
+          <li>Production crash rate fell 42% (2.90% → 1.67%) over the stabilization that came with it.</li>
+          <li>Bundle size dropped 15% (89 → 76 MB) from Hermes and build cleanup.</li>
+          <li>Releases continued throughout the migration.</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>What I took from it</h2>
+        <p>On a live product, the safest migration is the one that keeps the app releasable at every commit. The interop layer is what makes that possible on the New Architecture — it turns a terrifying cutover into a sequence of small, reversible steps.</p>
+      </section>
+    </main>
+  </body>
+</html>
