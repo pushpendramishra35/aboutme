@@ -179,6 +179,11 @@
             <h3>ts-api-client &nearr;</h3>
             <p>Typed, zero-dependency HTTP client &mdash; retries with backoff, timeouts, interceptors, token refresh.</p>
           </a>
+          <a class="case-card" href="case-studies/ai-augmented-workflow.html">
+            <span class="tag">AI workflow</span>
+            <h3>AI-augmented engineering</h3>
+            <p>How I use coding agents and LLM APIs as leverage &mdash; with human ownership of what ships.</p>
+          </a>
         </div>
       </section>
 
@@ -329,6 +334,7 @@
           video) with prompt design, output validation, tool-enabled orchestration (incl. MCP) and failure
           recovery so it runs unattended.
         </p>
+        <p class="section-more"><a href="case-studies/ai-augmented-workflow.html">Read the full AI workflow &rarr;</a></p>
       </section>
 
       <!-- ============ STACK ============ -->
@@ -453,6 +459,18 @@
           toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
         });
         nav.addEventListener("click", function (e) { if (e.target.tagName === "A") close(); });
+      })();
+
+      // Conversion signals — cookieless, no tracker loaded by default (GA4-ready via dataLayer).
+      // Records résumé / GitHub / LinkedIn / email clicks so effectiveness can be measured
+      // if analytics is ever connected — no cookies, no personal data, no network calls here.
+      (function () {
+        window.dataLayer = window.dataLayer || [];
+        document.addEventListener("click", function (e) {
+          var el = e.target.closest("[data-cta]");
+          if (!el) return;
+          window.dataLayer.push({ event: "cta_click", cta: el.getAttribute("data-cta") });
+        });
       })();
 
       // Reveal-on-scroll — only leaf elements, never whole sections (respects reduced-motion)
