@@ -130,7 +130,7 @@
           <div class="story-body">
             <p><span class="cs-label">Problem</span> A revenue-critical hospitality app was stuck on React Native 0.62. Dependencies had drifted, custom native modules blocked upgrades, and the New Architecture was on the horizon with no clear path to it.</p>
             <p><span class="cs-label">Decision</span> Upgrade incrementally rather than rewrite. Move version by version, keep the old bridge working while migrating custom native modules to TurboModules behind the interop layer, so releases never had to stop.</p>
-            <p><span class="cs-label">Result</span> Reached 0.77.2 on the New Architecture with TurboModules live on iOS and Android. Crash rate fell 42% and the bundle shrank 15% along the way.</p>
+            <p><span class="cs-label">Result</span> Reached 0.77.2 on the New Architecture with TurboModules live on iOS and Android, and trimmed the bundle 15% along the way. The reliability work that rode alongside it is <a href="#stabilization">case study 02</a>.</p>
             <a class="link-arrow" href="case-studies/react-native-modernization.html">Read the full case study &rarr;</a>
           </div>
           <div class="story-aside">
@@ -144,16 +144,16 @@
               <span class="chip strong">0.77.2</span>
             </div>
             <div class="cs-result">
-              <div><strong>&minus;42%</strong><span>crash rate</span></div>
+              <div><strong>15</strong><span>versions upgraded</span></div>
               <div><strong>&minus;15%</strong><span>bundle size</span></div>
-              <div><strong>15</strong><span>versions</span></div>
+              <div><strong>New Arch</strong><span>TurboModules live</span></div>
             </div>
           </div>
         </div>
       </article>
 
       <!-- CASE STUDY 02 — STABILIZATION -->
-      <article class="story">
+      <article class="story" id="stabilization">
         <header class="story-head">
           <span class="cs-num">Case study / 02</span>
           <span class="tag">Reliability · Production</span>
